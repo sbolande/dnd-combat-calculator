@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>DnD Combat Calculator</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <header class="bar head" id="head">
+                <div class="toggle-button" onclick="toggleSidebar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="sidebar" class="home_sidebar">
+                    <ul>
+                        <li><a href="./encounter_pages/encounter.html">Create Encounter</a></li>
+                        <li><a href="./xpCalc_pages/xpCalc.html">Calculate Experience</a></li>
+                        <li><a href="./monster_pages/monsters.html">Browse Monsters</a></li>
+                    </ul>
+                </div>
+                <h1>ENCOUNTER MASTER</h1>
+                <div class="dropdown" onclick="toggleDropdown()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+        </div>
+        <div class="content" id="home_content">
+            <ul>
+                <li>
+                    <form action="./encounter_pages/encounter.html">
+                        <input class="big_button" type="submit" value="Create Encounter">
+                    </form>
+                </li>
+                <li>
+                    <form action="./xpCalc_pages/xpCalc.html">
+                        <input class="big_button" type="submit" value="Calculate XP">
+                    </form>
+                </li>
+                <li>
+                    <form action="./monster_pages/monsters.html">
+                        <input class="big_button" type="submit" value="Browse Monsters">
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="bar foot">
+            <footer>
+
+            </footer>
+        </div>
+    </body>
+
+</html>

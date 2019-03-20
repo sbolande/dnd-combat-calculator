@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Browse Monsters</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="./../main.css">
+        <script src="./../main.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <header class="bar head" id="monster_head">
+                <div class="toggle-button" onclick="toggleSidebar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="sidebar" class="monster_sidebar">
+                    <ul>
+                        <li><a href="./../index.html">Home</a></li>
+                        <li><a href="./../encounter_pages/encounter.html">Create Encounter</a></li>
+                        <li><a href="./../xpCalc_pages/xpCalc.html">Calculate Experience</a></li>
+                    </ul>
+                </div>
+                <h1>MONSTER INDEX</h1>
+                <div class="dropdown" onclick="toggleDropdown()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+        </div>
+
+        <div class="center">
+            <div class="bar" id="monster_options">
+                <button id="monster_browse">BROWSE</button><button id="monster_create">CREATE</button>
+            </div>
+            <div class="content" id="monster_content">
+
+            </div>
+        </div>
+
+        <div class="bar foot">
+            <footer>
+
+            </footer>
+        </div>
+    </body>
+
+</html>

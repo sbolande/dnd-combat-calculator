@@ -1,0 +1,236 @@
+/*** ALL FILES ***/
+@font-face {
+    font-family: 'Silkscreen';
+    src: url('./fonts/slkscr.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Silkscreen', arial;
+}
+
+/* FLEXBOX */
+html {
+    height: 100%;
+}
+
+body {
+    background: #f6f6f6;
+    height: 100%;
+    min-height: 100%;
+    width: auto;
+    text-align: center;
+}
+
+/* HEADER & FOOTER */
+.bar {
+    width: 100%;
+    color: #ffffff;
+    vertical-align: text-bottom;
+    height: 40px;
+    position: fixed;
+    overflow: hidden;
+}
+
+.head {
+    background: #1a2e50;
+    border-top: 5px solid #1a2e50;
+    overflow: hidden;
+}
+
+#head {
+    border-bottom: 2px solid #bbbbbb;
+}
+
+.foot {
+    overflow: hidden;
+    background: #a63725;
+    border-top: 2px solid #bbbbbb;
+    bottom: 0px;
+}
+
+.content {
+    position: absolute;
+    overflow-y: auto;
+}
+
+/* HAMBURGER MENU */
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    left: -200px;
+    transition: all 500ms linear;
+    background: #f6f6f6;
+    text-align: left;
+}
+
+.home_sidebar {
+    top: 45px;
+}
+
+.monster_sidebar {
+    top: 90px;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar ul li {
+    color: #555555;
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.toggle-button {
+    position: absolute;
+    left: 10px;
+    top: 4px;
+}
+
+.toggle-button:hover span {
+    background: #bbbbbb;
+}
+
+.toggle-button span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #ffffff;
+    margin: 3px 0px;
+}
+
+/* DROP DOWN MENU */
+.dropdown {
+    position: fixed;
+    right: 14px;
+    top: 10px;
+}
+
+.dropdown span {
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #ffffff;
+    margin: 3px 0px;
+    border-radius: 50%;
+}
+
+.dropdown:hover span {
+    background: #bbbbbb;
+}
+
+/* BIG BUTTON */
+.big_button {
+    color: #555555;
+    background: #bbbbbb;
+    border: none;
+    height: 50px;
+    width: 230px;
+    margin: 15px;
+    text-align: center;
+    font-size: 19px;
+    border-radius: 23px;
+}
+
+.big_button:hover {
+    border: 2px solid #555555;
+}
+
+.big_button:active {
+    border: none;
+}
+
+/* COUNTER */
+.counter {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.small_button {
+    color: #555555;
+    background: #bbbbbb;
+    border: none;
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    text-align: center;
+    font-size: 19px;
+    border-radius: 23px;
+    vertical-align: middle;
+}
+
+.small_button:hover {
+    border: 2px solid #555555;
+}
+
+.small_button:active {
+    border: none;
+}
+
+#count {
+    color: #555555;
+    background: #bbbbbb;
+    border: none;
+    height: 50px;
+    width: 100px;
+    margin: 15px;
+    font-size: 19px;
+    border-radius: 23px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*** INDEX.HTML ***/
+/* CONTENT */
+#home_content {
+    top: 25%;
+    left: 15%;
+    right: 15%;
+}
+
+/*** MONSTERS.HTML ***/
+/* HEADER */
+.center {
+    top: 0px;
+    height: 100%;
+}
+
+#monster_options {
+    background: #d68e49;
+    border-top: 3px solid #b8793efd;
+    top: 45px;
+}
+
+#monster_options button {
+    background: #d68e49;
+    color: #ffffff;
+    border: none;
+    padding-top: 12px;
+}
+
+@media only screen and (min-width: 570px) {
+    #monster_options button {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    #monster_options button {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+}
+
+/* CONTENT */
+#monster_content {
+    height: 1000px;
+}
