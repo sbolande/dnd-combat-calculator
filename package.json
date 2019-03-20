@@ -1,0 +1,19 @@
+{
+  "name": "dnd-combat-calculator",
+  "version": "1.0.0",
+  "description": "Tabletop roleplay combat calculator web app",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbolande/dnd-combat-calculator.git"
+  },
+  "author": "Seth Bolander",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sbolande/dnd-combat-calculator/issues"
+  },
+  "homepage": "https://github.com/sbolande/dnd-combat-calculator#readme"
+}
