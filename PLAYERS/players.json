@@ -1,3 +1,21 @@
 {
-    "list": []
+    "list": [
+        {
+            "Name": "Gorm",
+            "Class": "Barbarian",
+            "Level": 1,
+            "Race": "Human",
+            "Alignment": "Neutral Neutral",
+            "AC": 16,
+            "Initiative": 0,
+            "Speed": 20,
+            "HP": 16,
+            "STR": 14,
+            "DEX": 10,
+            "CON": 16,
+            "INT": 10,
+            "WIS": 12,
+            "CHA": 18
+        }
+    ]
 }
