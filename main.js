@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+// Toggle hamburger menu
 function toggleSidebar() {
     document.getElementById('sidebar').classList.toggle('active');
 }
@@ -11,7 +12,6 @@ function addPlayer() {
         count.innerHTML = `${++num}`;
     }
 }
-
 function subtractPlayer() {
     var count = document.getElementById('count');
     var num = Number(count.innerHTML);
